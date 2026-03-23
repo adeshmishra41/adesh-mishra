@@ -3,51 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Adesh Mishra - Portfolio</title>
 </head>
 <body>
     <header>
-        <h1>Adesh Mishra</h1>
-        <p>Contact: 7508516040 | Email: adeshmishra1790@gmail.com | <a href="https://www.linkedin.com/in/adeshmishra">LinkedIn</a></p>
-        <hr>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Discover my projects and experiences!</p>
+            <button>View My Work</button>
+        </section>
     </header>
-    <section>
-        <h2>Professional Summary</h2>
-        <p>Experienced Technical Architect with a demonstrated history of working in the IT industry. Skilled in API Development, .NET Core, ASP.NET, C#, and cloud technologies.</p>
-    </section>
-    <section>
-        <h2>Work Experience</h2>
-        <ul>
-            <li><strong>Hexaware Technologies</strong> - Technical Architect</li>
-            <li><strong>Baker & Taylor</strong> - Senior Software Developer</li>
-            <li><strong>Iotasol Technologies</strong> - Technical Lead, Senior Software Engineer</li>
-            <li><strong>EPixel Software</strong> - Software Engineer</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Lovely Professional University</strong> - MCA</li>
-            <li><strong>Makhanlal Chaturvedi National University</strong> - BCA</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>API Development</li>
-            <li>GitHub</li>
-            <li>.NET Core</li>
-            <li>ASP.NET</li>
-            <li>C#</li>
-            <li>Azure Cloud</li>
-            <li>MongoDB</li>
-            <li>MS SQL Server</li>
-            <li>AMCAT Certification</li>
-        </ul>
-    </section>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate web developer with expertise in front-end technologies...</p>
+        </section>
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <ul>
+                <li>
+                    <h3>Job Title at Company</h3>
+                    <p>Dates Worked</p>
+                    <p>Description of responsibilities and accomplishments.</p>
+                </li>
+                <li>
+                    <h3>Job Title at Company</h3>
+                    <p>Dates Worked</p>
+                    <p>Description of responsibilities and accomplishments.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="grid">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>JavaScript</div>
+                <div>React</div>
+            </div>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <div class="card">
+                <h3>Degree</h3>
+                <p>Institution Name</p>
+                <p>Graduation Year</p>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>Last updated: 2026-03-23 12:14:11 UTC</p>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
     </footer>
 </body>
 </html>
