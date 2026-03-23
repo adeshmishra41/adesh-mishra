@@ -1,0 +1,47 @@
+.linkedin-inspired {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #F3F1F1;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.linkedin-inspired:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 15px;
+    width: calc(30% - 40px);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(45% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: calc(100% - 40px);
+    }
+}
